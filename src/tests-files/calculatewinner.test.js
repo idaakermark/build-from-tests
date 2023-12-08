@@ -1,5 +1,5 @@
 import {render, screen} from "@testing-library/react"
-import CalculateWinner from "."
+import CalculateWinner from "../components/CalculateWinner"
 
 describe("The pokemon in the lead or tied should be displayed", () => {
   test ("The display with the winner is rendered", () => {
@@ -36,5 +36,4 @@ describe("The pokemon in the lead or tied should be displayed", () => {
     const results = screen.getByText("It's a tie between Bulbasaur and Charmander and Squirtle with 2 votes each!")
     expect(results).toBeInTheDocument()
   })
-
 })
